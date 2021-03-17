@@ -5,22 +5,16 @@ import * as actions from '../actions';
 class Users extends Component {
     componentDidMount() {
         this.props.fetchUsers();
-        console.log(this.props.fetchUsers());
+        console.log(this.props.fetchUsers())
     }
     render() {
-        const { className, title } = this.props;
+        //const { className, title } = this.props;
+      //  console.log(this.props);
         return (
             <div>
              Test
             </div>
         )
-    }
-}
-
-function mapStateToProps(state) {
-    const { cartProducts } = state.user;
-    return {
-        cartProducts
     }
 }
 
